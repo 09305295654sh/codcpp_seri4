@@ -1,0 +1,24 @@
+#include<iostream>
+#include<conio.h>
+using namespace std;
+ 
+main()
+{
+int a,b,r,m;
+cout<<"please enter two numbers:";
+cout<<"\n\n"<<"number1=";
+cin>>a;
+cout<<"\n"<<"number2=";
+cin>>b;
+cout<<"\n\n"<<"K.M.M of "<<a<<','<<b<<" is:";
+m=a*b;
+do{
+r=(a%b);
+a=b;
+b=r;
+}while(r!=0);
+cout<<m/a;
+cout<<"\n\n\n"<<"press any key to exit...";
+getch();
+return  0;
+}
